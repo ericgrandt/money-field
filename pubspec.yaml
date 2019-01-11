@@ -1,8 +1,8 @@
 name: money_field
 description: A simple to use TextEditingController for handling money values.
 version: 1.0.0
-author: Eric Grandt
-homepage:
+author: Eric Grandt <contact@ericgrandt.com>
+homepage: https://github.com/Erigitic/money-field
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
