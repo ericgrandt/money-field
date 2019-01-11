@@ -4,20 +4,20 @@ A simple to use TextEditingController for handling money values.
 
 ## Install
 
-### **1. Add money_field to your pubspec.yaml:**
+### 1. Add money_field to your pubspec.yaml:
 
 ```yaml
 dependencies:
     money_field: ^1.0.0
 ```
 
-### **2. Install it**
+### 2. Install it
 
 ```
 flutter packages get
 ```
 
-### **3. Import it:**
+### 3. Import it:
 
 ```dart
 import 'package:money_field/money_field.dart';
