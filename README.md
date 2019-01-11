@@ -8,7 +8,7 @@ A simple to use TextEditingController for handling money values.
 
 ```yaml
 dependencies:
-	money_field: ^1.0.0
+    money_field: ^1.0.0
 ```
 
 ### **2. Install it**
@@ -31,8 +31,8 @@ final _moneyFieldController = MoneyFieldController();
 ...
 
 TextFormField(
-	controller: _moneyFieldController,
-	keyboardType: TextInputType.number,
+    controller: _moneyFieldController,
+    keyboardType: TextInputType.number,
 ),
 ```
 
@@ -40,11 +40,11 @@ TextFormField(
 
 ```dart
 final _moneyFieldController = MoneyFieldController(
-	decimalSeparator = '.',
-	thousandsSeparator = ',',
-	invalidFormatError = 'Invalid input format',
-	invalidLengthError = 'Length must be less than or equal to 9',
-	maxDigitsBeforeDecimal = 9
+    decimalSeparator = '.',
+    thousandsSeparator = ',',
+    invalidFormatError = 'Invalid input format',
+    invalidLengthError = 'Length must be less than or equal to 9',
+    maxDigitsBeforeDecimal = 9
 );
 ```
 
@@ -62,11 +62,11 @@ var doubleValue = _moneyFieldController.doubleValue();
 final _moneyFieldController = MoneyFieldController();
 
 TextFormField(
-	controller: _moneyFieldController,
-	keyboardType: TextInputType.number,
-	validator: (_) {
-		return _moneyFieldController.moneyFieldValidator();
-	},
+    controller: _moneyFieldController,
+    keyboardType: TextInputType.number,
+    validator: (_) {
+        return _moneyFieldController.moneyFieldValidator();
+    },
 ),
 ```
 
@@ -79,9 +79,11 @@ final _moneyFieldController = MoneyFieldController();
 
 bool isFormatValid = _moneyFieldController.isFormatValid();
 bool isLengthValid = _moneyFieldController.isLengthValid();
+
+// Checks if format and length are valid
 bool isValid = _moneyFieldController.isInputValid();
 ```
 
 ## Issues
 
-If you encounter any issues, feel free to post them on the [GitHub page]().
+If you encounter any issues, feel free to post them on the [GitHub page](https://github.com/Erigitic/money-field/issues).
